@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" media="all" href="jquery-jvectormap-1.1.1.css"/>
+  <script src="http://fm.cnbc.com/applications/cnbc.com/resources/styles/skin/files/jquery/jquery-1.10.2.min.js"></script>
+  <script src="jquery-jvectormap-1.2.2.min.js"></script>
+<script src="jquery-jvectormap-us-lcc-en.js"></script>
+<script src="metro-data.js"></script>
+<style>
+.catbox{color:white;margin-left:5px;padding:5px 8px 5px 8px;display:block;float:right;background:lightgrey;}
+.name{margin-top:5px;display:block;float:left;color:#333;}
+td{font-family:Arial;color:white;font-size:12px;background:#333;}
+.credit td{background:white;color:lightgrey;}
+.credit  .left{width:auto;}
+.right{text-align:right;}
+.jvectormap-container{background:#d5d5d5!important;}
+#block{background:#63B0F2;width:20px;height:20px;display:block;}
+#circle{background:#2E5170;width:20px;height:20px;border-radius:15px;display:block;}
+</style>
+  <script>
+
+    $(function(){
+	$.getJSON('metro-data.json', function(data){   
+
+      $('#us-map').vectorMap({
+        map: 'us_lcc_en',
+		zoomOnScroll: false,
+		
+		markersSelectable:true,
+		markerStyle: {
+		      initial: {
+		        fill: '#2E5170',
+		        stroke: '#0089ff',
+		"stroke-width": 1,
+				r: 5
+		      },
+			hover: {
+			    stroke: '#40a8cd',
+			    "stroke-width": 2
+			  }
+		    },
+			
+		backgroundColor: 'lightgrey',							
+		markers: data.metro.coords,
+		series: {
+		        regions: [{
+		          scale: {
+		            '1': '#63B0F2'
+		          },
+		          attribute: 'fill',
+		          values: data['regions']
+		        }]
+		      },	
+		
+        onMarkerLabelShow: function(event, label, index){
+          label.html(data.metro.names[index]);
+        },
+        onRegionLabelShow: function(event, label, index){
+        }
+      });
+
+      
+    });
+});
+  </script>
+</head>
+<body>
+  <div id="us-map" style="width: 520px; height: 380px"></div>
+		<div id="legend">
+			<table width="520" cellpadding="8" cellspacing="0">
+				<tr>
+					<td class="left"><span id="circle"></span></td>
+					<td class="cat1"><span id="block"></span></td>
+					<td class="cat2">States/Cities where real estate pros say could be the next hot spots where the housing recovery heats up.</td>				
+				</tr>
+			</table>
+			<table class="credit" width="520" cellpadding="8" cellspacing="0">
+				<tr>
+					<td class="left">Sources: Realtor.com, RealtyTrac</td>
+					<td class="right"><img src="cnbc-logo.png" /></td>				
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
+
+
+<iframe src="http://fm.cnbc.com/applications/cnbc.com/resources/styles/skin/DATA-VISUALIZATION/MAPS/REAL-ESTATE-RECOVERY/index.html" width="520" height="495" frameborder="0" scrolling="no"></iframe>

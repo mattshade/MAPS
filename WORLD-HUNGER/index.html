@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" media="all" href="jquery-jvectormap-1.1.1.css"/>
+  <script src="http://fm.cnbc.com/applications/cnbc.com/resources/styles/skin/files/jquery/jquery-1.10.2.min.js"></script>
+  <script src="jquery-jvectormap-1.1.1.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+<script src="gdp-data.js"></script>
+<style>
+.catbox{color:white;margin-left:5px;padding:5px 8px 5px 8px;display:block;float:right;background:lightgrey;}
+.name{margin-top:5px;display:block;float:left;color:#333;}
+.cat1{background:#2E5170;}
+.cat2{background:#4F6170;}
+.cat3{background:#86A3BC;}
+.cat4{background:#63B0F2;}
+.cat5{background:#AACFEF;}
+td{text-align:center;font-family:Arial;color:white;font-size:11px;background:#333;}
+.left{text-align:left;width:100px;}
+.credit td{background:white;color:lightgrey;}
+.credit  .left{width:auto;}
+.right{text-align:right;}
+</style>
+  <script>
+
+    $(function(){
+	
+	  var hungerMap = $('#world-map-gdp').vectorMap({
+	    map: 'world_mill_en',
+	    series: {
+	      regions: [{
+	        values: gdpData,
+	        scale: ['#2E5170','#4F6170','#86A3BC','#63B0F2','#AACFEF'],
+	        normalizeFunction: 'polynomial'
+	      }]
+	    },
+		regionStyle:{
+			hover: {
+			    "fill-opacity": 0.8
+			  }
+		},
+	    onRegionLabelShow: function(e, el, code){
+	      el.html('<span class="name">'+el.html()+'</span><span class="catbox cat'+gdpData[code]+'">'+ gdpData[code]+'</span>');
+	    }
+	  });
+	});
+	
+	var color = map.series.regions[0].scale.getValue(gdpData[code]);
+  </script>
+</head>
+<body>
+  <div id="world-map-gdp" style="width: 520px; height: 380px"></div>
+<div id="legend">
+	<table width="520" cellpadding="8" cellspacing="0">
+		<tr>
+			<td class="left">Category</td>
+			<td class="cat1">1</td>
+			<td class="cat2">2</td>
+			<td class="cat3">3</td>
+			<td class="cat4">4</td>
+			<td class="cat5">5</td>
+		</tr>
+		<tr>
+			<td class="left">Undernourished</td>
+			<td>+35%</td>
+			<td>20 - 34%</td>
+			<td>5 - 19%</td>
+			<td>2.5 - 4%</td>
+			<td>< 2.5%</td>
+		</tr>
+		<tr>
+			<td class="left">Description</td>
+			<td>Very High</td>
+			<td>Moderately High</td>
+			<td>Moderately Low</td>
+			<td>Very Low</td>
+			<td>Extremely Low</td>
+		</tr>
+		</table>
+		<table class="credit" width="520" cellpadding="8" cellspacing="0">
+			<tr>
+				<td class="left">Source:  Food and Agricultural Organization of the U.N.</td>
+				<td class="right"><img src="cnbc-logo.png" /></td>
+				
+			</tr>
+			</table>
+</div>
+</body>
+</html>
+
+
+
+<iframe src="http://fm.cnbc.com/applications/cnbc.com/resources/styles/skin/DATA-VISUALIZATION/MAPS/WORLD-HUNGER/index.html" width="520" height="495" frameborder="0" scrolling="no"></iframe>

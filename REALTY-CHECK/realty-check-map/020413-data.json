@@ -1,0 +1,480 @@
+
+
+
+{
+   "metro":{
+      "coords":[
+         [
+            29.76, -95.36
+            
+         ],
+         [
+            38.89, -77.03
+            
+         ],
+         [
+            42.36, -71.05
+            
+         ],
+         [
+            42.33, -83.04
+            
+         ],
+         [
+            44.98, -93.26
+            
+         ],
+         [
+            33.74, -84.38
+            
+         ],
+         [
+            36.12, -115.17
+            
+         ],
+         [
+            40.71, -74.00
+            
+         ],
+         [
+            41.87, -87.62
+            
+         ],
+         [
+            41.49, -81.69
+            
+         ],
+         [
+            32.78, -96.80
+            
+         ],
+         [
+            34.05, -118.24
+            
+         ],
+         [
+            39.73, -104.98
+            
+         ],
+         [
+            25.78, -80.22
+            
+         ],
+         [
+            33.83, -112.11
+            
+         ],
+         [
+            45.52, -122.67
+            
+         ],
+         [
+            32.71, -117.15
+            
+         ],
+         [
+            37.77, -122.41
+            
+         ],
+         [
+            47.59, -122.32
+            
+         ],
+         [
+           27.94, -82.45
+            
+         ],
+		[
+		  35.2269, -80.8433
+		],
+		[
+		  41.5339, -93.6631
+		],
+		[
+		  39.7683, -86.1581
+		],
+		[
+		  39.0997, -94.5783
+		],
+		[
+		  35.4675, -97.5161
+		],
+		[
+		  39.9522, -75.1642
+		],
+		[
+		  43.6614, -70.2558
+		],
+		[
+		  40.7500, -111.8833
+		],
+		[ 
+		  36.1658, -86.7844
+		],
+		[ 
+		  32.3667, -86.3000
+		],
+		[ 
+		  34.7464, -92.2894
+		],
+		[ 
+		  38.2008, -84.8733
+		],
+		[ 
+		  35.6869, -105.9372
+		],
+		[ 
+		  41.8239, -71.4133
+		],
+		[ 
+		  44.5000, -89.5000
+		],
+		[ 
+		  46.5928, -112.0353
+		]
+      ],
+      "names":[
+         "Houston",
+         "Washington, DC",
+         "Boston",
+         "Detroit",
+         "Minneapolis",
+         "Altanta",
+         "Las Vegas",
+         "Manhattan/NYC",
+         "Chicago",
+         "Cleveland",
+         "Dallas / Ft. Worth",
+         "Los Angeles",
+         "Denver",
+         "Miami",
+         "Phoenix",
+         "Portland",
+         "San Diego",
+         "San Francisco",
+         "Seattle",
+         "Tampa",
+		 "Charlotte",
+		 "Des Moines",
+		 "Indianapolis",
+		 "Kansas City",
+		 "Oklahoma City",
+		 "Philadelphia",
+		 "Portland",
+		 "Salt Lake City",
+		 "Nashville",
+		 "Alabama",
+		 "Arkansas",
+		 "Kentucky",
+		 "New Mexico",
+		 "Rhode Island",
+		 "Wisconsin",
+		 "Montana"
+      ],
+	"month":[
+        "June",
+		"June",
+		"June",
+		"June",
+		"June",
+		"June",
+		"June",
+		"Q2 2013",
+		"June",
+		"April",
+		"March",
+		"June",
+		"June",
+		"June",
+		"May",
+		"July",
+		"June",
+		"June",
+		"July",
+		"May",
+		"July",
+		"June",
+		"June",
+		"June",
+		"March",
+		"June",
+		"June",
+		"Q2 2013",
+		"April",
+		"May",
+		"March",
+		"June",
+		"June",
+		"Q2 2013",
+		"June",
+		"June YTD"
+      ],
+	"sales_arrow":[
+         "up",
+		"up",
+		"down",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"up",
+		"up",
+		"up",
+		"down",
+		"up",
+		"up",
+		"up",
+		"up",
+		"down",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"down",
+		"up",
+		"up",
+		"up"
+      ],
+	"prices_arrow":[
+         "down",
+		"up",
+		"down",
+		"up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"down",
+		"up",
+		"up",
+		"up",
+		"down",
+		"down",
+		"down",
+		"up",
+		"up",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"up",
+		"blank",
+		"up"
+      ],
+	"inventory_arrow":[
+         "down",
+		"down",
+		"blank",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"blank",
+		"down",
+		"down",
+		"down",
+		"down",
+		"up",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"down",
+		"blank",
+		"down",
+		"down",
+		"down",
+		"blank",
+		"down",
+		"blank",
+		"blank",
+		"down",
+		"blank"
+      ],
+	"sales":[
+        "13% <span class='time-label'>yy</span>",
+		"6.3% <span class='time-label'>yy</span>",
+		"3.4% <span class='time-label'>yy</span>",
+		"20% <span class='time-label'>yy</span>",
+		"5.6% <span class='time-label'>yy</span>",
+		"12.4% <span class='time-label'>yy</span>",
+		"7.8% <span class='time-label'>yy</span>",
+		"18.8% <span class='time-label'>qq</span>",
+		"15% <span class='time-label'>yy</span>",
+		"15.6% <span class='time-label'>yy</span>",
+		"22% <span class='time-label'>yy</span>",
+		"8% <span class='time-label'>yy</span>",
+		"14% <span class='time-label'>yy</span>",
+		"25% <span class='time-label'>yy</span>",
+		"4% <span class='time-label'>yy</span>",
+		"12% <span class='time-label'>yy</span>",
+		"1.1% <span class='time-label'>yy</span>",
+		"12% <span class='time-label'>yy</span>",
+		"12% <span class='time-label'>yy</span>",
+		"16% <span class='time-label'>yy</span>",
+		"33% <span class='time-label'>yy</span>",
+		"8% <span class='time-label'>yy</span>",
+		"13% <span class='time-label'>yy</span>",
+		"8% <span class='time-label'>yy</span>",
+		"10% <span class='time-label'>yy</span>",
+		"17.8% <span class='time-label'>yy</span>",
+		"14.5% <span class='time-label'>yy</span>",
+		"18% <span class='time-label'>yy</span>",
+		"27% <span class='time-label'>yy</span>",
+		"13% <span class='time-label'>yy</span>",
+		"7% <span class='time-label'>yy</span>",
+		"17% <span class='time-label'>yy</span>",
+		"0.6% <span class='time-label'>yy</span>",
+		"15% <span class='time-label'>yy</span>",
+		"11% <span class='time-label'>yy</span>",
+		"15% <span class='time-label'>yy</span>"
+      ],
+	"prices":[
+        "10.00%* <span class='time-label'>yy</span>",
+		"9.36%* <span class='time-label'>yy</span>",
+		"8.73%* <span class='time-label'>yy</span>",
+		"15.56%* <span class='time-label'>yy</span>",
+		"9.13%* <span class='time-label'>yy</span>",
+		"16.12%* <span class='time-label'>yy</span>",
+		"25.99%* <span class='time-label'>yy</span>",
+		"7.18%* <span class='time-label'>yy</span>",
+		"4.64%* <span class='time-label'>yy</span>",
+		"2.54%* <span class='time-label'>yy</span>",
+		"9.86%* <span class='time-label'>yy</span>",
+		"20.74%* <span class='time-label'>yy</span>",
+		"10.47%* <span class='time-label'>yy</span>",
+		"13.51%* <span class='time-label'>yy</span>",
+		"17.12%* <span class='time-label'>yy</span>",
+		"14.64%* <span class='time-label'>yy</span>",
+		"19.86%* <span class='time-label'>yy</span>",
+		"20.98%* <span class='time-label'>yy</span>",
+		"15.05%* <span class='time-label'>yy</span>",
+		"9.38%* <span class='time-label'>yy</span>",
+		"7.81%* <span class='time-label'>yy</span>",
+		"3.15%* <span class='time-label'>yy</span>",
+		"3.41%* <span class='time-label'>yy</span>",
+		"1.90%* <span class='time-label'>yy</span>",
+		"3.58%* <span class='time-label'>yy</span>",
+		"3.94%* <span class='time-label'>yy</span>",
+		"9.10%* <span class='time-label'>QQ</span>",
+		"14.25%* <span class='time-label'>yy</span>",
+		"8.38%* <span class='time-label'>yy</span>",
+		"3% <span class='time-label'>yy</span>",
+		"2.7% <span class='time-label'>yy</span>",
+		"0.4% <span class='time-label'>yy</span>",
+		"4.7% <span class='time-label'>yy</span>",
+		"1.6% <span class='time-label'>yy</span>",
+		"--% <span class='time-label'>yy</span>",
+		"13% <span class='time-label'>yy</span>"
+      ],
+	"inventory":[
+        "39% <span class='time-label'>yy</span>",
+		"15% <span class='time-label'>yy</span>",
+		"31% <span class='time-label'>yy</span>",
+		"28% <span class='time-label'>yy</span>",
+		"17.2% <span class='time-label'>yy</span>",
+		"33 <span class='time-label'>yy</span>",
+		"19% <span class='time-label'>yy</span>",
+		"31.3% <span class='time-label'>yy</span>",
+		"32% <span class='time-label'>yy</span>",
+		"N/A",
+		"22% <span class='time-label'>yy</span>",
+		"17.6% <span class='time-label'>yy</span>",
+		"34% <span class='time-label'>yy</span>",
+		"15.6% <span class='time-label'>yy</span>",
+		"21% <span class='time-label'>yy</span>",
+		"26% <span class='time-label'>yy</span>",
+		"24% <span class='time-label'>yy</span>",
+		"22.5% <span class='time-label'>yy</span>",
+		"8% <span class='time-label'>yy</span>",
+		"35% <span class='time-label'>yy</span>",
+		"18.8% <span class='time-label'>yy</span>",
+		"11% <span class='time-label'>yy</span>",
+		"15% <span class='time-label'>yy</span>",
+		"8% <span class='time-label'>yy</span>",
+		"9% <span class='time-label'>yy</span>",
+		"25% <span class='time-label'>yy</span>",
+		"N/A",
+		"15% <span class='time-label'>yy</span>",
+		"15% <span class='time-label'>yy</span>",
+		"3% <span class='time-label'>yy</span>",
+		"N/A",
+		"2% <span class='time-label'>yy</span>",
+		"N/A",
+		"N/A",
+		"17% <span class='time-label'>yy</span>",
+		"N/A"
+      ],
+	"sources":[
+         "Houston Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "GCAAR / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Greater Boston Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Realcomp / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Minneapolis Area Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Atlanta Board of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "GLVAR / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Douglas Elliman/Jonathan Miller / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Illinois Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Cleveland Area Board of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "MetroTex Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "California Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Denver Metro Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Miami Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "-- / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "RMLS / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "California Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "California Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Northwest MLS / CoreLogic&reg;<br/>* HPI change as of June 2013",
+         "Greater Tampa Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Carolina MLS / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Des Moines Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Metropolitan Indianapolis Board of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Kansas City Regional Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "OKC Metro Assoc. of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Prudential Fox & Roach / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Maine Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Salt Lake Board of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Greater Nashville Association of Realtors / CoreLogic&reg;<br/>* HPI change as of June 2013",
+		 "Alabama Center for Real Estate / CoreLogic&reg;",
+		 "Arkansas Realtors Association / CoreLogic&reg;",
+		 " RE/MAX of Kentucky / CoreLogic&reg;",
+		 "Realtors Association of New Mexico / CoreLogic&reg;",
+		 "Rhode Island Association of Realtors / CoreLogic&reg;",
+		 "Wisconsin Realtors Association;",
+		 "Montana Assoc. of Realtors / CoreLogic&reg;"
+      ]
+      
+      }
+   }

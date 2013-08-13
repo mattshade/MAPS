@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8"/>
+  <title>Realty Check with Diana Olick - Taking the Real Estate Recovery Local</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" media="all" href="css/020413-jquery-jvectormap.css"/>
+<style>
+.info, .month{font-size:14px;}
+.month{margin-left:5px;}
+.city-name{font-size:18px;}
+.info ul{list-style:none;margin:0px;padding:0px;}
+.arrow{float:right;margin-top:20px;}
+.info td{border-bottom:lightgrey solid 1px;}
+.info{border-collapse:collapse;}
+.source{font-size:11px;}
+.info .last{border-bottom:none;}
+</style>
+  <script src="js/jquery.min.js"></script>
+<script src="/js/media-queries.js"></script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="js/jquery-mousewheel.js"></script>
+  <script src="js/jquery-jvectormap-us-lcc-en.js"></script>
+  <script>
+	$(function(){
+		
+	        $.getJSON('020413-data.json', function(data){
+	        
+
+	          $('#map').vectorMap({
+	            map: 'us_lcc_en',
+				zoomOnScroll: false,
+				regionsSelectable:false,
+				markersSelectable:true,
+				markerStyle: {
+				      initial: {
+				        fill: '#2f7b96',
+				        stroke: '#2f7b96',
+						r: 8
+				      },
+					hover: {
+					    stroke: '#40a8cd',
+					    "stroke-width": 0
+					  }
+				    },
+				backgroundColor: 'lightgrey',							
+				markers: data.metro.coords,
+				// MARKER LABELS
+				
+				// SAMPLE DATA SET
+				// Miami (January)
+				// 
+				// Sales (arrow up) 5% mm
+				// Prices (arrow up) 6% yy
+				// Supply (arrow down) 8% mm
+				// Source:  Miami Association of Realtors		
+				
+	            onMarkerLabelShow: function(event, label, index){
+	              label.html(
+'<table class="info" border="0" cellpadding="5"><tr><td class="city-name" colspan="4">'+data.metro.names[index]+'<span  class="month">('+data.metro.month[index]+')</span></td></tr><tr><td>Sales: </td><td><img src="img/'+data.metro.sales_arrow[index]+'_arrows.png"/><td>'+data.metro.sales[index]+'</td><td>mm</td></tr><tr><td>Prices: </td><td><img src="img/'+data.metro.prices_arrow[index]+'_arrows.png"/><td>'+data.metro.prices[index]+'</td><td>yy</td></tr><tr><td>Supply: </td><td><img src="img/'+data.metro.supply_arrow[index]+'_arrows.png"/><td>'+data.metro.supply[index]+'</td><td>mm</td></tr><tr><td colspan="4" class="source last">Source: '+data.metro.sources[index]+'</td></tr></table>'
+	                
+	              );
+	$('.jvectormap-label').css('cssText','display:block!important;');
+	            },
+	            onRegionLabelShow: function(event, label, index){
+	            	            
+	$('.jvectormap-label').css('cssText','display:none!important;');
+	            	               	            }
+	          });
+
+	          
+	        });
+	      });
+  </script>
+</head>
+<body>
+  <div id="map" style="width: 940px; height: 630px"></div>
+</body>
+</html>

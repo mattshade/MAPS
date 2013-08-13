@@ -1,0 +1,285 @@
+{
+   "metro":{
+      "coords":[
+         [
+            30.0100824182039, -95.5859497594467
+            
+         ],
+         [
+            38.8951148, -77.0363716
+            
+         ],
+         [
+            42.3604823, -71.0595678
+            
+         ],
+         [
+            42.3316454, -83.0466755
+            
+         ],
+         [
+            44.9800, -93.2636
+            
+         ],
+         [
+            33.7489, -84.3881
+            
+         ],
+         [
+            36.1208, -115.1722
+            
+         ],
+         [
+            40.7142, -74.0064
+            
+         ],
+         [
+            41.8756208, -87.6243706
+            
+         ],
+         [
+            41.4994, -81.6956
+            
+         ],
+         [
+            32.7801052, -96.8000082
+            
+         ],
+         [
+            34.0522, -118.2428
+            
+         ],
+         [
+            39.7391536, -104.9847034
+            
+         ],
+         [
+            25.788968900000000000, -80.226439299999980000
+            
+         ],
+         [
+            33.8370945154001, -112.118299660174
+            
+         ],
+         [
+            45.5236, -122.6750
+            
+         ],
+         [
+            32.7153, -117.1564
+            
+         ],
+         [
+            37.7750, -122.4183
+            
+         ],
+         [
+            47.5992959, -122.3288811
+            
+         ],
+         [
+           27.9475216, -82.4584279
+            
+         ]
+      ],
+      "names":[
+         "Houston",
+         "Washington, DC",
+         "Boston",
+         "Detroit",
+         "Minneapolis",
+         "Altanta",
+         "Las Vegas",
+         "New York",
+         "Chicago",
+         "Cleveland",
+         "Dallas",
+         "Los Angeles",
+         "Denver",
+         "Miami",
+         "Phoenix",
+         "Portland",
+         "San Diego",
+         "San Francisco",
+         "Seattle",
+         "Tampa"
+      ],
+	"month":[
+        "January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January",
+		"January"
+      ],
+	"sales_arrow":[
+         "up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"up",
+		"down"
+      ],
+	"prices_arrow":[
+         "down",
+		"down",
+		"down",
+		"down",
+		"up",
+		"up",
+		"up",
+		"up",
+		"down",
+		"down",
+		"down",
+		"up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"up",
+		"up"
+      ],
+	"supply_arrow":[
+         "up",
+		"up",
+		"down",
+		"up",
+		"down",
+		"up",
+		"up",
+		"up",
+		"down",
+		"down",
+		"up",
+		"down",
+		"up",
+		"down",
+		"down",
+		"up",
+		"down",
+		"up",
+		"up",
+		"up"
+      ],
+	"sales":[
+        "4%",
+		"1%",
+		"3%",
+		"6%",
+		"3%",
+		"5%",
+		"5%",
+		"8%",
+		"3%",
+		"4%",
+		"5%",
+		"2%",
+		"3%",
+		"6%",
+		"5%",
+		"4%",
+		"4%",
+		"6%",
+		"5%",
+		"5%"
+      ],
+	"prices":[
+        "4%",
+		"1%",
+		"3%",
+		"6%",
+		"3%",
+		"5%",
+		"5%",
+		"8%",
+		"3%",
+		"4%",
+		"5%",
+		"2%",
+		"3%",
+		"6%",
+		"5%",
+		"4%",
+		"4%",
+		"6%",
+		"5%",
+		"5%"
+      ],
+	"supply":[
+        "4%",
+		"1%",
+		"3%",
+		"6%",
+		"3%",
+		"5%",
+		"5%",
+		"8%",
+		"3%",
+		"4%",
+		"5%",
+		"2%",
+		"3%",
+		"6%",
+		"5%",
+		"4%",
+		"4%",
+		"6%",
+		"5%",
+		"5%"
+      ],
+	"sources":[
+         "Houston Association of Realtors",
+         "Washington, DC Association of Realtors",
+         "Boston Association of Realtors",
+         "Detroit Association of Realtors",
+         "Minneapolis Association of Realtors",
+         "Altanta Association of Realtors",
+         "Las Vegas Association of Realtors",
+         "New York Association of Realtors",
+         "Chicago Association of Realtors",
+         "Cleveland Association of Realtors",
+         "Dallas Association of Realtors",
+         "Los Angeles Association of Realtors",
+         "Denver Association of Realtors",
+         "Miami Association of Realtors",
+         "Phoenix Association of Realtors",
+         "Portland Association of Realtors",
+         "San Diego Association of Realtors",
+         "San Francisco Association of Realtors",
+         "Seattle Association of Realtors",
+         "Tampa Association of Realtors"
+      ]
+      
+      }
+   }

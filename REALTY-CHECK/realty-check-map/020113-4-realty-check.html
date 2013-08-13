@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Realty Check with Diana Olick - Taking the Real Estate Recovery Local</title>
+  <link rel="stylesheet" media="all" href="css/jquery-jvectormap.css"/>
+<style>
+.info, .month{font-size:12px;}
+.month{margin-left:5px;}
+.city-name{font-size:16px;}
+ul{list-style:none;margin:0px;padding:0px;}
+.arrow{float:right;margin-top:20px;}
+.info td{border-bottom:lightgrey solid 1px;}
+table{border-collapse:collapse;}
+.source{font-size:10px;}
+.info .last{border-bottom:none;}
+.jvectormap-label {margin-left:-5px;}
+</style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-jvectormap.js"></script>
+  <script src="js/jquery-mousewheel.js"></script>
+
+  <script src="lib/jvectormap.js"></script>
+
+  <script src="lib/abstract-element.js"></script>
+  <script src="lib/abstract-canvas-element.js"></script>
+  <script src="lib/abstract-shape-element.js"></script>
+
+  <script src="lib/svg-element.js"></script>
+  <script src="lib/svg-group-element.js"></script>
+  <script src="lib/svg-canvas-element.js"></script>
+  <script src="lib/svg-shape-element.js"></script>
+  <script src="lib/svg-path-element.js"></script>
+  <script src="lib/svg-circle-element.js"></script>
+
+  <script src="lib/vml-element.js"></script>
+  <script src="lib/vml-group-element.js"></script>
+  <script src="lib/vml-canvas-element.js"></script>
+  <script src="lib/vml-shape-element.js"></script>
+  <script src="lib/vml-path-element.js"></script>
+  <script src="lib/vml-circle-element.js"></script>
+
+  <script src="lib/vector-canvas.js"></script>
+  <script src="lib/simple-scale.js"></script>
+	<script src="lib/svg-image-element.js"></script>
+
+  <script src="lib/numeric-scale.js"></script>
+  <script src="lib/ordinal-scale.js"></script>
+  <script src="lib/color-scale.js"></script>
+  <script src="lib/data-series.js"></script>
+  <script src="lib/proj.js"></script>
+  <script src="lib/world-map.js"></script>
+
+  <script src="js/jquery-jvectormap-us-aea-en.js"></script>
+  <script>
+	$(function(){
+		
+	        $.getJSON('020113-data.json', function(data){
+	        
+
+	          $('#map').vectorMap({
+	            map: 'us_aea_en',
+				zoomOnScroll: false,
+				markerStyle: {
+				      initial: {
+				        fill: '#2f7b96',
+				        stroke: '#2f7b96',
+						r: 8,
+						image:'img/house.png'
+				      },
+					hover: {
+					    stroke: '#40a8cd',
+					    "stroke-width": 2
+					  }
+				    },
+				backgroundColor: 'lightgrey',							
+				markers: data.metro.coords,
+				// MARKER LABELS
+				
+				// SAMPLE DATA SET
+				// Miami (January)
+				// 
+				// Sales (arrow up) 5% mm
+				// Prices (arrow up) 6% yy
+				// Supply (arrow down) 8% mm
+				// Source:  Miami Association of Realtors		
+				
+	            onMarkerLabelShow: function(event, label, index){
+	              label.html(
+'<table class="info" border="0" cellpadding="5"><tr><td class="city-name" colspan="4">'+data.metro.names[index]+'<span  class="month">('+data.metro.month[index]+')</span></td></tr><tr><td>Sales: </td><td><img src="img/'+data.metro.sales_arrow[index]+'_arrows.png"/><td>'+data.metro.sales[index]+'</td><td>mm</td></tr><tr><td>Prices: </td><td><img src="img/'+data.metro.prices_arrow[index]+'_arrows.png"/><td>'+data.metro.prices[index]+'</td><td>yy</td></tr><tr><td>Supply: </td><td><img src="img/'+data.metro.supply_arrow[index]+'_arrows.png"/><td>'+data.metro.supply[index]+'</td><td>mm</td></tr><tr><td colspan="4" class="source last">Source: '+data.metro.sources[index]+'</td></tr></table>'
+	                
+	              );
+	$('.info').parent().css({'padding':'8px'});
+	            },
+   	            onRegionLabelShow: function(event, label, index){
+   	              label.html('<div class="label-hide" style="display:none;padding:0px;"></div>'
+   	              );
+$('.label-hide').parent().css({'padding':'0px'});
+   	            }
+	          });
+
+	          $("#slider").slider({
+	            value: val,
+	            min: 2005,
+	            max: 2009,
+	            step: 1,
+	            slide: function( event, ui ) {
+	              val = ui.value;
+	              mapObject.series.regions[0].setValues(data.states[ui.value]);
+	              mapObject.series.markers[0].setValues(data.metro.unemployment[ui.value]);
+	              mapObject.series.markers[1].setValues(data.metro.population[ui.value]);
+	            }
+	          });
+	        });
+	      });
+  </script>
+</head>
+<body>
+  <div id="map" style="width: 940px; height: 630px"></div>
+</body>
+</html>
